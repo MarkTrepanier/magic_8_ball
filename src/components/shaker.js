@@ -14,7 +14,7 @@ export default function  Shaker(props){
     return <button onClick={()=>{
         props.setShake(true)
         props.setAnswer(shake())
-        setTimeout(() => props.setShake(false), 2000);
+        setTimeout(() => props.setShake(false), 1000);
         }
         }>
         shake!
