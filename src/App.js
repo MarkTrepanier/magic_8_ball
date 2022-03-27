@@ -5,7 +5,7 @@ import EightBall from './components/EightBall';
 import { useState } from 'react';
 
 function App() {
-  const [answer, setAnswer] = useState("shake")
+  const [answer, setAnswer] = useState("What?")
   const [shake, setShake] = useState(false);
 
   return (
