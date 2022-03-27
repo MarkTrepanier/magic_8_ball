@@ -7,7 +7,7 @@ import img from "./images/magic8ball.jpg"
 function App() {
   return (
     <div className="App">
-      <select>{questions.map(question =><option value={question}>{question}</option>)}</select>
+      <select>{questions.map(question =><option key={question} value={question}>{question}</option>)}</select>
       <EightBall src={require("./images/magic8ball.jpg")} alt="8-ball">
         <p>text inside</p>
       </EightBall>
