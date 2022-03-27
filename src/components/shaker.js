@@ -10,5 +10,9 @@ function shake() {
 }
 export default function  Shaker(props){
 
-    return <button onClick={()=>props.setAnswer(shake())}>shake!</button>
+    return <button onClick={()=>{
+        props.animate()
+        props.setAnswer(shake())}}>
+            shake!
+        </button>
 }
