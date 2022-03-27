@@ -3,15 +3,18 @@ import questions from './components/Questions';
 import Shaker from "./components/shaker";
 import styledComponents from 'styled-components';
 import img from "./images/magic8ball.jpg"
+import { useState } from 'react';
 
 function App() {
+  let [answer, setAnswer] = useState("hello")
+
   return (
     <div className="App">
       <select>{questions.map(question =><option key={question} value={question}>{question}</option>)}</select>
       <EightBall src={require("./images/magic8ball.jpg")} alt="8-ball">
-        <p>text inside</p>
+        <p>{answer}</p>
       </EightBall>
-      <Shaker/>
+      <Shaker setAnswer={setAnswer}/>
     </div>
   );
 }
