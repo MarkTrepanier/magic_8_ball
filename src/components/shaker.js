@@ -6,13 +6,17 @@ let answers = ["As I see it, yes.", "Ask again later.", "Better not tell you now
         "Yes.", "Yes definitely.", "You may rely on it."]
 
 function shake() {
+
     return answers[Math.floor(Math.random() * answers.length)]
 }
 export default function  Shaker(props){
 
     return <button onClick={()=>{
-        props.animate()
-        props.setAnswer(shake())}}>
-            shake!
-        </button>
+        props.setShake(true)
+        props.setAnswer(shake())
+        setTimeout(() => props.setShake(false), 2000);
+        }
+        }>
+        shake!
+    </button>
 }
