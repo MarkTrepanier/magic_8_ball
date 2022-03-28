@@ -1,5 +1,5 @@
 import Styled from 'styled-components';
-import img from "../images/magic8ball.jpg"
+import img from "../images/8-ball-back-small.png"
 
 function EightBall(props) {
 
@@ -34,6 +34,6 @@ const EightBallStyle = Styled.div`
     -moz-user-select: none; /* Firefox */
     -ms-user-select: none; /* IE10+/Edge */
     user-select: none; /* Standard */
-    color: white;
+    color: #f1f1f1;
   }
 `
