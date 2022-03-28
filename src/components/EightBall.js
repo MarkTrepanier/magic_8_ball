@@ -34,6 +34,6 @@ const EightBallStyle = Styled.div`
     -moz-user-select: none; /* Firefox */
     -ms-user-select: none; /* IE10+/Edge */
     user-select: none; /* Standard */
-    color: #f1f1f1;
+    color: #d5d5d5;
   }
 `
