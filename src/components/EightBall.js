@@ -4,7 +4,7 @@ import img from "../images/8-ball-back-small.png"
 function EightBall(props) {
 
     return (
-        <div className={props.shake ? "shake"  : "8ball"}>
+        <div className={props.shake ? "shake" : "8ball"}>
             <EightBallStyle >
                 <p>{props.answer}</p>
             </EightBallStyle>

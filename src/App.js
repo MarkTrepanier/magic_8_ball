@@ -10,9 +10,9 @@ function App() {
 
   return (
     <div className="App">
-      <select>{questions.map(question =><option key={question} value={question}>{question}</option>)}</select>
-      <EightBall shake={shake} answer={answer}/>
-      <Shaker setShake={setShake} setAnswer={setAnswer}/>
+      <select>{questions.map(question => <option key={question} value={question}>{question}</option>)}</select>
+      <EightBall shake={shake} answer={answer} />
+      <Shaker setShake={setShake} setAnswer={setAnswer} />
     </div>
   );
 }
